@@ -13,9 +13,6 @@ Created and maintained with ❤️ by [Cruip.com](https://cruip.com/).
 Check the live demo here 👉️ [https://mosaic.cruip.com/](https://mosaic.cruip.com/)
 
 
-## Design files
-
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/3sigqHe
 
 ## Table of contents
 
