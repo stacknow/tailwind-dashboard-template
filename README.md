@@ -8,12 +8,6 @@ Use it for whatever you want, and be sure to reach us out on [Twitter](https://t
 
 Created and maintained with ❤️ by [Cruip.com](https://cruip.com/).
 
-## Live demo
-
-Check the live demo here 👉️ [https://mosaic.cruip.com/](https://mosaic.cruip.com/)
-
-
-
 ## Table of contents
 
 * [Usage](#usage)
