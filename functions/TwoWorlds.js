@@ -1,6 +1,6 @@
 // logicFunction.js
 
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
 
 const logicFunction = async (req, res) => {
     try {
@@ -19,4 +19,4 @@ const logicFunction = async (req, res) => {
     }
 };
 
-export default logicFunction;
+exports.logicFunction = logicFunction;
