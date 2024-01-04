@@ -28,4 +28,4 @@ const displayWebsiteNames = async () => {
   console.log(websiteNames);
 };
 
-displayWebsiteNames();
+export default { fetchData, displayWebsiteNames };
