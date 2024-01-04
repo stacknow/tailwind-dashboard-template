@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 const fetchData = async () => {
   try {
-    const apiUrl = 'https://api.flatfilemaker.com/sqlman/table/vercel_db/websites';
+    const apiUrl = 'https://random-data-api.com/api/v2/users';
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
