@@ -9,11 +9,10 @@ const fetchData = async () => {
       throw new Error('Failed to fetch data');
     }
 
-    const data = await response.json();
-    return data.map((website) => website.website_name);
+    return response; // Return the raw response
   } catch (error) {
     console.error(error);
-    return [];
+    return null; // Return null in case of an error
   }
 };
 
