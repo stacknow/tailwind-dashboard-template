@@ -1,16 +1,14 @@
-// myRouteHandler.js
+// Define the logic for your endpoint
+const myRouteHandler = (req, res) => {
+    try {
+        // Your logic here
+        // You can access the request using 'req' and send a response using 'res'
+        res.json({ message: 'Hello, World!' });
+    } catch (error) {
+        console.error(`Error in myRouteHandler: ${error}`);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+};
 
-// Import necessary modules
-import express from 'express';
-
-// Create an instance of the Express Router
-const router = express.Router();
-
-// Define a route handler function
-router.get('/', (req, res) => {
-    // Respond with a JSON message
-    res.json({ message: 'Hello, World!' });
-});
-
-// Export the router
-export default router;
+// Export the route handler function
+module.exports = myRouteHandler;
