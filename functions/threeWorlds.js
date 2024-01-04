@@ -17,15 +17,4 @@ const fetchData = async () => {
   }
 };
 
-const displayWebsiteNames = async () => {
-  const websiteNames = await fetchData();
-
-  if (websiteNames.length === 0) {
-    console.error('No website names available');
-    return;
-  }
-
-  console.log(websiteNames);
-};
-
-export default { fetchData, displayWebsiteNames };
+export default fetchData;
