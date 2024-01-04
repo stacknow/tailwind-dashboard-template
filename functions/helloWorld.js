@@ -1,8 +1,8 @@
-// Define the logic for your endpoint
+// myRouteHandler.js
+
 const myRouteHandler = (req, res) => {
     try {
         // Your logic here
-        // You can access the request using 'req' and send a response using 'res'
         res.json({ message: 'Hello, World!' });
     } catch (error) {
         console.error(`Error in myRouteHandler: ${error}`);
@@ -10,5 +10,4 @@ const myRouteHandler = (req, res) => {
     }
 };
 
-// Export the route handler function
-module.exports = myRouteHandler;
+export default myRouteHandler;
