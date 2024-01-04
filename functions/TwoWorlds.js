@@ -1,13 +1,22 @@
-// myRouteHandler.js
+// logicFunction.js
 
-const myRouteHandler = (req, res) => {
+import fetch from 'node-fetch';
+
+const logicFunction = async (req, res) => {
     try {
-        // Your logic here
-        res.json({ message: 'Hello, World!' });
+        const apiUrl = 'https://jsonplaceholder.typicode.com/posts/1'; // Example public API endpoint
+        const response = await fetch(apiUrl);
+
+        if (!response.ok) {
+            throw new Error(`API request failed with status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        res.json(data); // Send the API response as the HTTP response
     } catch (error) {
-        console.error(`Error in myRouteHandler: ${error}`);
+        console.error('Error in logicFunction:', error.message);
         res.status(500).json({ error: 'Internal Server Error' });
     }
 };
 
-module.exports = myRouteHandler;
+export default logicFunction;
