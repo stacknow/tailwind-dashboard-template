@@ -1,7 +1,7 @@
 // myRouteHandler.js
 
 // Import necessary modules
-const express = require('express');
+import express from 'express';
 
 // Create an instance of the Express Router
 const router = express.Router();
@@ -13,4 +13,4 @@ router.get('/', (req, res) => {
 });
 
 // Export the router
-module.exports = router;
+export default router;
