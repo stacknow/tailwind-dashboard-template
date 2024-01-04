@@ -1,4 +1,5 @@
-export default (req, res) => {
+// helloWorld.js
+module.exports = (req, res) => {
     res.send("Hello, World!");
 };
 
